@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+
+<style>
+
+    p {text-align: center;}
+
+    .block {
+        background-color: mediumaquamarine;
+        width: 50%;
+    }
+
+    .flexcentering {
+        display: flex;
+        justify-content: center; /* this is a property of flexboxes */
+    }
+
+
+
+</style>
+
+</head>
+<body>
+    <h1>Centering</h1>
+    <h2>Inline Centering with text-align</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur enim non, illum distinctio explicabo architecto deserunt, blanditiis atque ad facilis, laudantium amet nam incidunt. Necessitatibus in blanditiis recusandae quia consectetur.</p>
+    <h2>Block Centering</h2>
+    <p class="block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat non molestias, quod voluptatem sapiente cum debitis vitae doloremque, iste, porro quos at minima molestiae architecto voluptas quibusdam alias nobis cumque.</p>
+    <h2>Hacky Centering with Flexbox</h2>
+    <!-- this method works best when your content doesn't take the full width -->
+    <p class="flexcentering"><img src="../images/otto.jpeg"></p>
+
+
+
+
+</body>
+</html>
