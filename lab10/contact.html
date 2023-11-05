@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    
+    <title>Contact</title>
+
+
+    <style>
+
+        .row1 div {
+            flex: 2;
+            background-color: #d7f0e4;
+            padding: 30px;
+            margin-bottom: 10px;
+            border-radius: 50px;
+            width: 10px;
+
+        }
+
+        .row2 div{
+    flex: 2;
+    display: flex;
+    background-color: #35eacc;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    width: 0px;
+}
+
+
+.row1, .row2 {
+    display: flex;
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form {
+  flex-basis: 70%;
+  flex: 1;
+}
+
+form {
+    width: 100%;
+    max-width: 600px; 
+    margin: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+   
+}
+
+label {
+    display: block;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.address { margin: 10px;}
+
+.links {margin: 10px;}
+
+
+.map {margin: 10px;}
+
+
+@media only screen and (max-width: 600px) {
+
+  .form {
+    flex-wrap: wrap;
+  }
+
+}
+
+    </style>
+
+</head>
+
+
+
+
+
+<body>
+
+  <nav class="nav1">
+    <div><a href="cshroyer14.github.io/ist263/lab10/index.html/">Home</a></div>
+    <div><a href="cshroyer14.github.io/ist263/lab10/skills.html">Skills</a></div>
+    <div><a href="cshroyer14.github.io/ist263/lab10/contact.html/">Contact</a></div>
+</nav>
+
+
+      <h1><strong>Contact</strong></h1>
+      <div class="row1">
+
+            
+                <div class="address"> 
+                    Christopher Shroyer <br>
+                    700 S. Crouse Avenue <br>
+                    Syracuse, NY <br>
+                    13244 <br>
+            
+
+              </div>  
+
+              <br>
+
+              <div class="links">
+                <p>
+                    <img src="../images/linkedin.svg" alt="LinkedIn logo"> <a href="https://www.linkedin.com/in/chris-shroyer-890980262/">My LinkedIn Profile</a>
+                    <br>
+                    <a href="mailto:cshroyer@syr.edu">Chris Shroyer Email</a>
+                </p>
+            </div>
+      </div>
+    
+
+
+
+      <div class="row2">
+          <div class="form">
+            <form action="https://formspree.io/f/xwkdrrka" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email">
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4"></textarea>
+                  <input type="submit" value="Submit">
+            </form>
+
+          </div>
+
+         
+
+         
+
+        
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1321863708454!2d-76.13369219999997!3d43.03865020000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1694715683225!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+       
+      </div>
+
+
+
+
+<br>
+
+
+<hr>
+&copy; 2023
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
