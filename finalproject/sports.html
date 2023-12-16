@@ -96,6 +96,7 @@
             display: flex;
             justify-content: space-between;
             margin: 5px;
+            padding: 10px;
         
 
         }
@@ -125,17 +126,17 @@
     </style>
 
 <script>
-    function showContent(contentId) {
-        // Hide all content elements
-        var contents = document.querySelectorAll('.content');
-        contents.forEach(function(content) {
-            content.classList.remove('active');
-        });
+  function showCards(category) {
+            // Hide all cards
+            var cards = document.querySelectorAll('.card');
+            cards.forEach(function(card) {
+                card.classList.remove('active-card');
+            });
 
-        // Show the selected content
-        var selectedContent = document.getElementById(contentId);
-        selectedContent.classList.add('active');
-    }
+            // Show the selected category
+            var selectedCard = document.getElementById('football' + '-card');
+            selectedCard.classList.add('active-card');
+        }
 </script>
 
 
@@ -175,23 +176,21 @@
 
 <main>
 <br>
-<div class="nav2">
-    <div><a href="#" onclick="showContent('ALL')">All</a></div>
-    <div><a href="#" onclick="showContent('NFL')">Football</a></div>
-    <div><a href="#" onclick="showContent('NBA')">Basketball</a></div>
-    <div><a href="#" onclick="showContent('UFC')">UFC</a></div>
-    
-    
-    
-    
-    
-</div>
+<!-- <div class="nav2">
+    <div><a href="#" onclick="showCards('all')">All</a></div>
+    <div><a href="#" onclick="showCards('football')">Football</a></div>
+    <div><a href="#" onclick="showCards('basketball')">Basketball</a></div>
+    <div><a href="#" onclick="showCards('ufc')">UFC</a></div>
+</div>-->
+
+
 <br>
 <br>
 
     <div class="row1" id="row1">
 
-        <div class="card" id="NFL">
+
+        <div class="card" id="football">
             <img src="images/vikingsgolf.jpeg" class="card-img-top" alt="Port Washington Vikings Varsity Golf team with trophy">
             <div class="card-body">
               <h5 class="card-title"><b>Port Varsity Golf Wins Long Island Championship</b></h5>
@@ -204,7 +203,7 @@
         </div>
         <br>
 
-        <div class="card" id="NHL">
+        <div class="card" id="basketball">
             <img src="images/linetscamp.jpg" class="card-img-top" alt="Long Island Nets Camp">
             <div class="card-body">
               <h5 class="card-title"><b>Long Island Nets Basketball Clinics</b></h5>
@@ -217,7 +216,7 @@
         </div>
         <br>
 
-        <div class="card" id="Football">
+        <div class="card" id="football">
             <img src="images/221nfllogo.jpg" class="card-img-top" alt="National Football League Logo">
             <div class="card-body">
               <h5 class="card-title"><b>Through 13 weeks, which NFL teams have the best chance to claim eternity?</b></h5>
